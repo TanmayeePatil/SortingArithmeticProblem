@@ -28,3 +28,8 @@ if [ $b -ne 0 ];then
 else
   echo "Cannot divide by zero. try again"
 fi
+
+echo -e "\nUSE CASE 5:"
+uc5Result=$(( a%b+c ))
+echo "a%b+c = $uc5Result"
+
