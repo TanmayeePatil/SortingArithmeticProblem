@@ -14,11 +14,17 @@ echo "b=$b"
 echo "c=$c"
 
 echo -e "\nUSE CASE 2:"
-
 uc2Result=$(( a+b*c ))
 echo "a+b*c = $uc2Result"
 
 echo -e "\nUSE CASE 3:"
-
 uc3Result=$(( a*b+c ))
 echo "a+b*c = $uc3Result"
+
+echo -e "\nUSE CASE 4:"
+if [ $b -ne 0 ];then
+  uc4Result=$(( c+a/b ))
+  echo "c+a/b = $uc4Result"
+else
+  echo "Cannot divide by zero. try again"
+fi
