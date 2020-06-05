@@ -17,3 +17,8 @@ echo -e "\nUSE CASE 2:"
 
 uc2Result=$(( a+b*c ))
 echo "a+b*c = $uc2Result"
+
+echo -e "\nUSE CASE 3:"
+
+uc3Result=$(( a*b+c ))
+echo "a+b*c = $uc3Result"
