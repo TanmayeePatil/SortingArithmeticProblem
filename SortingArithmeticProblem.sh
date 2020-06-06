@@ -50,3 +50,11 @@ echo -e "\nUSE CASE 6:"
 echo "All dictonary keys: ${!SortArithDict[@]}"
 echo "All dictonary values: ${SortArithDict[@]}"
 
+echo -e "\nUSE CASE 7:"
+echo  "Storing result from dictionary to array"
+for key in "${!SortArithDict[@]}"; do
+  res="${SortArithDict[$key]}"
+  arrayResult+=($res)
+done
+echo "All array values: ${arrayResult[@]}"
+
