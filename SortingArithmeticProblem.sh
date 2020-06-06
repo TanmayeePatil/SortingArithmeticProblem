@@ -64,3 +64,8 @@ for key in "${!SortArithDict[@]}"; do
   printf '%s:%s\n' "$key" "${SortArithDict[$key]}"
 done | sort -t : -k 2n | sort -r
 
+echo -e "\nUSE CASE 9:"
+echo "Sorting in ascending order:"
+for key in "${!SortArithDict[@]}"; do
+  printf '%s:%s\n' "$key" "${SortArithDict[$key]}"
+done | sort -t : -k 2n
