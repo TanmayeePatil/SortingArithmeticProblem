@@ -58,3 +58,9 @@ for key in "${!SortArithDict[@]}"; do
 done
 echo "All array values: ${arrayResult[@]}"
 
+echo -e "\nUSE CASE 8:"
+echo "Sorting in descending order:"
+for key in "${!SortArithDict[@]}"; do
+  printf '%s:%s\n' "$key" "${SortArithDict[$key]}"
+done | sort -t : -k 2n | sort -r
+
